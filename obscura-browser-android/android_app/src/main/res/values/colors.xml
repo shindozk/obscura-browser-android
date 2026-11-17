@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors - Opera Mobile inspired palette -->
+    <color name="primary_50">#E8EAF6</color>
+    <color name="primary_100">#F5F7FA</color>
+    <color name="primary_500">#3F51B5</color>
+    <color name="primary_600">#3949AB</color>
+    <color name="primary_700">#303F9F</color>
+    <color name="primary_800">#283593</color>
+    <color name="primary_900">#1A237E</color>
+
+    <color name="secondary_50">#E0F2F1</color>
+    <color name="secondary_100">#E0F7FA</color>
+    <color name="secondary_500">#00ACC1</color>
+    <color name="secondary_600">#0097A7</color>
+    <color name="secondary_700">#00838F</color>
+    <color name="secondary_800">#006064</color>
+    <color name="secondary_900">#004D40</color>
+
+    <!-- Background and surface -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F5F5F5</color>
+    <color name="on_background">#212121</color>
+    <color name="on_surface">#212121</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+
+    <!-- Dividers and borders -->
+    <color name="divider">#B0BEC5</color>
+    <color name="outline">#78909C</color>
+
+    <!-- Status bar and navigation -->
+    <color name="status_bar_default">#FF3F51B5</color>
+    <color name="navigation_bar_default">#FF3F51B5</color>
+
+    <!-- Action bar -->
+    <color name="action_bar_background">#FFFFFF</color>
+    <color name="action_bar_title">#212121</color>
+
+    <!-- Tab indicators -->
+    <color name="tab_selected_color">#3F51B5</color>
+    <color name="tab_unselected_color">#666666</color>
+
+    <!-- Quick access FAB -->
+    <color name="fab_color">#3F51B5</color>
+
+    <!-- Text inputs -->
+    <color name="text_input_default">#757575</color>
+    <color name="text_input_focused">#3F51B5</color>
+</resources>

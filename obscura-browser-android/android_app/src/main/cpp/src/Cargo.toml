@@ -1,0 +1,8 @@
+[package]
+name = "obscura_browser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+android_logger = "0.2"
+android_native_app_glue = "0.2"

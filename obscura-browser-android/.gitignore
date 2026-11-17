@@ -1,0 +1,63 @@
+# Built application files
+*.apk
+*.ap_
+
+# Files for the local build environment
+/local.properties
+/.gradle
+/.idea
+/.vscode
+/captures/
+
+# Plugins
+*.iws
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# ML models
+*.model
+
+# Rust
+target/
+Cargo.lock
+
+# Android Studio
+*.iws
+/.gradle
+/local.properties
+/.idea/
+/*.iml
+.buildozer/
+
+# NDK
+/*/obj/
+/*/lib/
+
+# Convex specific
+/.next/
+/target/
+
+# Environment variables (DON'T COMMIT)
+.env
+.env.local
+.env.production
+
+# Kotlin native
+.native_cache
+
+# Obscura specific build outputs
+android_app/build/
+android_app/app/

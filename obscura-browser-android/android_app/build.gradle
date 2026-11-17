@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.obscura.browser'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.obscura.browser"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        externalNativeBuild {
+            cmake {
+                path 'src/main/cpp/CMakeLists.txt'
+                abiFilters 'armeabi-v7a', 'arm64-v8a'
+            }
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+externalNativeBuild {
+    cmake {
+        path 'src/main/cpp/CMakeLists.txt'
+    }
+}
+
+ndk {
+    modulePaths 'src/main/cpp'
+}
+}
