@@ -3,6 +3,49 @@ name = "obscura_browser"
 version = "0.1.0"
 edition = "2021"
 
+# Adapted from h4ckf0r0day/obscura headless browser
+# Core browser engine for Android NDK
+# See: ANALYSIS_ORIGINAL_OBSCURA.md for adaptation rationale
+
 [dependencies]
+# Android NDK native app glue
 android_logger = "0.2"
 android_native_app_glue = "0.2"
+
+# Core browser functionality (adapted from obscura-dom)
+html5ever = "0.24"
+markup5ever = "0.9"
+selectors = "0.3"
+servo_arc = "0.1"
+cssparser = "0.34"
+thiserror = "2.0"
+tracing = "0.1"
+precomputed_hash = "0.1"
+
+# Rendering (adapted from obscura-render)
+taffy = "0.1"
+tiny-skia = { version = "0.7", default-features = false, features = ["gpu", "software"] }
+cosmic_text = { version = "0.14.2", default-features = false, features = ["std", "swash", "shape-run-cache"] }
+swash = { version = "0.2", default-features = false, features = ["std", "scale", "render"] }
+ab_glyph = "0.1"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+resvg = { version = "0.47", default-features = false, features = ["text", "raster-images"] }
+usvg = { version = "0.47", default-features = false, optional = true }
+wuff = "0.2.7"
+base64 = "0.21"
+
+# HTTP client (adapted from obscura-net)
+ureq = { version = "2.9", default-features = false, features = ["tls"] }
+
+# Text shaping and layout
+log = "0.4"
+
+[dev-dependencies]
+log = "0.4"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "obscura_browser_app"
+path = "src/bin/main.rs"

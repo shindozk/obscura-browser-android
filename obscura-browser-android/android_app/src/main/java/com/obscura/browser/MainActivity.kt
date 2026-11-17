@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         // Initialize the obscura browser engine
         ObscuraNative.initEngine()
+        
+        // Set stealth mode (privacy feature from Obscura)
+        ObscuraNative.setStealth(true)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -75,6 +78,10 @@ class MainActivity : AppCompatActivity() {
 
         // Handle toolbar back arrow
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        // Example: Navigate to a default URL after engine initialization
+        // This would typically be triggered by user action or intent
+        // ObscuraNative.navigate("https://example.com")
     }
 
     override fun onDestroy() {
@@ -114,9 +121,10 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.action_share -> {
                 // Handle share
+                val content = ObscuraNative.getContent()
                 Snackbar.make(
                     findViewById(android.R.id.content),
-                    R.string.action_share,
+                    R.string.action_share + ": $content",
                     Snackbar.LENGTH_SHORT
                 ).show()
                 return true

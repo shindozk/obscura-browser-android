@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+    "src",
+]
+
+[dependencies]
+obscura = { path = "/workspace/chats/5c556ad51df70e15f635bd92/obscura-browser-android/ANALYSIS", optional = true }
+obscura-dom = { path = "/workspace/chats/5c556ad51df70e15f635bd92/obscura-browser-android/ANALYSIS", optional = true }
+obscura-render = { path = "/workspace/chats/5c556ad51df70e15f635bd92/obscura-browser-android/ANALYSIS", optional = true, features = ["paint"] }
+obscura-net = { path = "/workspace/chats/5c556ad51df70e15f635bd92/obscura-browser-android/ANALYSIS", optional = true }
